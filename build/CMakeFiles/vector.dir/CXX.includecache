@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/vector/vector.h
+memory
+-
+type_traits
+-
+
+/home/tatsuya/Desktop/vector/src/main.cpp
+vector/vector.h
+-
+
+/home/tatsuya/Desktop/vector/src/vector.cpp
+vector/vector.h
+-
+
