@@ -2,4 +2,5 @@
 
 int main()
 {
+	Vector<int> v;
 }

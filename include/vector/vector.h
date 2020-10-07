@@ -20,6 +20,24 @@ public:
 	using const_reference = const T&;
 	using pointer = typename traits::pointer;
 	using const_pointer = typename traits::const_pointer;
+	
+	//construntor
+	Vector() : Vector(Alloc{}) {}
+	explicit Vector(const Alloc& a) noexcept;
+	explicit Vector(size_type n,const Alloc& a = Alloc());
+	explicit Vector(size_type n,const_reference value,const Alloc& a = Alloc());
+
+	template<typename InputIter>
+	Vector(InputIter first,InputIter last,const Alloc& a = Alloc());
+	Vector(Vector&& x,const Alloc& a = Alloc()) noexcept;
+	
+	//destructor
+	~Vector();
+	
+	//operation
+	Vector& operator=(const Vector& x);
+	Vector& operator=(Vector&& x);
+
 private:
 	pointer e; // pointer of array (pointer of first element) 
 	size_type length = 0,cap = 1;
