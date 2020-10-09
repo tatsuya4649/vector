@@ -177,6 +177,33 @@ src/vector.cpp.s:
 	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector.cpp.s
 .PHONY : src/vector.cpp.s
 
+src/vector_member.o: src/vector_member.cpp.o
+
+.PHONY : src/vector_member.o
+
+# target to build an object file
+src/vector_member.cpp.o:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector_member.cpp.o
+.PHONY : src/vector_member.cpp.o
+
+src/vector_member.i: src/vector_member.cpp.i
+
+.PHONY : src/vector_member.i
+
+# target to preprocess a source file
+src/vector_member.cpp.i:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector_member.cpp.i
+.PHONY : src/vector_member.cpp.i
+
+src/vector_member.s: src/vector_member.cpp.s
+
+.PHONY : src/vector_member.s
+
+# target to generate assembly for a file
+src/vector_member.cpp.s:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector_member.cpp.s
+.PHONY : src/vector_member.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... src/vector.o"
 	@echo "... src/vector.i"
 	@echo "... src/vector.s"
+	@echo "... src/vector_member.o"
+	@echo "... src/vector_member.i"
+	@echo "... src/vector_member.s"
 .PHONY : help
 
 

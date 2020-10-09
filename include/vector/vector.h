@@ -1,5 +1,7 @@
 #include <memory>
 #include <type_traits>
+#include <utility>
+#include <iterator>
 
 template<typename T,typename Alloc = std::allocator<T>>
 class Vector{
@@ -29,14 +31,24 @@ public:
 
 	template<typename InputIter>
 	Vector(InputIter first,InputIter last,const Alloc& a = Alloc());
+	Vector(const Vector& x,const Alloc& a = Alloc());
 	Vector(Vector&& x,const Alloc& a = Alloc()) noexcept;
 	
 	//destructor
 	~Vector();
-	
+
 	//operation
 	Vector& operator=(const Vector& x);
 	Vector& operator=(Vector&& x);
+
+
+	//member func
+private:
+	void extension();
+	void extension(size_type n);
+public:	
+	template <typename... Args>
+	void emplace_back(Args&&... args);
 
 private:
 	pointer e; // pointer of array (pointer of first element) 

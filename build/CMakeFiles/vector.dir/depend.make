@@ -7,3 +7,6 @@ CMakeFiles/vector.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/vector.dir/src/vector.cpp.o: ../include/vector/vector.h
 CMakeFiles/vector.dir/src/vector.cpp.o: ../src/vector.cpp
 
+CMakeFiles/vector.dir/src/vector_member.cpp.o: ../include/vector/vector.h
+CMakeFiles/vector.dir/src/vector_member.cpp.o: ../src/vector_member.cpp
+

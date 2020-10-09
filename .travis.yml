@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+        - g++
+script:
+        - g++ __version
+        - cd build
+        - cmake ..
+        - make
