@@ -13,6 +13,10 @@ type_traits
 -
 utility
 -
+iterator
+-
+algorithm
+-
 
 /home/tatsuya/Desktop/vector/src/main.cpp
 vector/vector.h

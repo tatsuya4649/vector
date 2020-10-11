@@ -16,5 +16,5 @@ endif()
 include_directories( ./include ./src )
 
 #target
-add_executable( vector ./src/main.cpp ./src/vector.cpp ./src/vector_member.cpp)
+add_executable( vector ./src/main.cpp)
 

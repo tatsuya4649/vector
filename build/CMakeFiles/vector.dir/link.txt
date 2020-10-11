@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/vector.dir/src/main.cpp.o CMakeFiles/vector.dir/src/vector.cpp.o CMakeFiles/vector.dir/src/vector_member.cpp.o  -o vector 
+/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/vector.dir/src/main.cpp.o  -o vector 
